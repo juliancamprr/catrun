@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .cat img {
+            display: none;
+            width: 10em;
+            position: absolute;
+            right: 2em;
+            animation: correndo 1s linear 5s;
+        }
+
+        @keyframes correndo {
+            100% {
+                right: 100%;
+            }
+        }
+    </style>
+    <title>Gato Assustado</title>
+</head>
+<body>
+    <div class="button">
+        <button id="assustar">Assustar gato</button>
+    </div>
+    <div class="cat">
+        <img src="image/gatoassustado.jpg" alt="Gato assustado" id="cat">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
